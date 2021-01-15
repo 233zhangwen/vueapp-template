@@ -1,5 +1,8 @@
 <template>
-  <div class="about">
+  <article class="about">
+    <van-sticky>
+      <van-search v-model="value" placeholder="请输入搜索关键词" />
+    </van-sticky>
     <van-pull-refresh v-model="refreshing" @refresh="onRefresh">
       <van-list
         v-model="loading"
@@ -7,10 +10,10 @@
         finished-text="没有更多了"
         @load="onLoad"
       >
-        <van-cell v-for="item in list" :key="item" :title="item" />
+        <van-cell v-for="item in list" :key="item" :title="item" @click="handleClick" />
       </van-list>
     </van-pull-refresh>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -18,6 +21,7 @@ export default {
   name: 'About',
   data() {
     return {
+      value: '',
       list: [],
       loading: false,
       finished: false,
@@ -51,6 +55,9 @@ export default {
       this.loading = true;
       this.onLoad();
     },
+    handleClick() {
+      
+    }
   },
 }
 </script>

@@ -1,0 +1,85 @@
+import Vue from 'vue';
+import {
+    Tabbar,
+    TabbarItem,
+    Grid,
+    GridItem,
+    Tab,
+    Tabs,
+    Skeleton,
+    NavBar,
+    Swipe,
+    SwipeItem,
+    Sticky,
+    List,
+    Lazyload,
+    PullRefresh,
+    Loading,
+    Dialog,
+    ActionSheet,
+    Image,
+    Icon,
+    Toast,
+    Cell,
+    DatetimePicker,
+    Popup,
+    Uploader,
+    Row,
+    Col,
+    Button,
+    Field,
+    CellGroup,
+    RadioGroup,
+    Radio,
+    AddressList,
+    AddressEdit,
+    Area,
+    DropdownMenu,
+    DropdownItem,
+    Divider,
+    Stepper,
+    SubmitBar,
+    Checkbox,
+    Search,
+    ImagePreview,
+    NumberKeyboard
+} from 'vant';
+Vue.use(CellGroup);
+Vue.use(Field);
+Vue.use(Button);
+Vue.use(Row);
+Vue.use(Col);
+Vue.use(Uploader);
+Vue.use(Tabbar).use(TabbarItem);
+Vue.use(Grid).use(GridItem);
+Vue.use(Tab).use(Tabs);
+Vue.use(Skeleton);
+Vue.use(NavBar);
+Vue.use(Swipe).use(SwipeItem);
+Vue.use(Sticky);
+Vue.use(List);
+Vue.use(Lazyload);
+Vue.use(PullRefresh);
+Vue.use(Loading);
+Vue.use(Dialog);
+Vue.use(ActionSheet);
+Vue.use(Image);
+Vue.use(Icon);
+Vue.use(Toast);
+Vue.use(Cell);
+Vue.use(DatetimePicker);
+Vue.use(Popup);
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(AddressList);
+Vue.use(AddressEdit);
+Vue.use(Area);
+Vue.use(DropdownMenu).use(DropdownItem);
+Vue.use(Divider);
+Vue.use(Stepper);
+Vue.use(SubmitBar);
+Vue.use(Checkbox);
+Vue.use(Search);
+Vue.use(NumberKeyboard);
+Vue.use(ImagePreview);
+
